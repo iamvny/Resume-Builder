@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4d4d5f, #050606);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+section {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 50px;
+    font-weight: 600;
+    background-image: radial-gradient(circle,#7764ad,#ee2e07);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h3 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom left, #aba6ba, #cd4f30);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.creator-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 2s forwards, fadeIn 2s forwards;
+}
+.creator-box:nth-child(1){
+    animation-delay: 0.6s;
+}
+.creator-box:nth-child(2) {
+    animation-delay: 0.6s; /* Delay for the second box */
+}
+
+.creator-box:nth-child(3) {
+    animation-delay: 0.2s; /* Delay for the third box */
+}
+
+.creator-box h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    background-image: radial-gradient(circle, #491fbe, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.creator-box p {
+    color: #333;
+}
+
+.creator-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Add specific styles for Instagram, LinkedIn, and GitHub icons */
+.social-icons a.instagram {
+    color: #e4405f;
+}
+
+.social-icons a.linkedin {
+    color: #0077b5;
+}
+
+.social-icons a.github {
+    color: #333;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,204 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1d1d1d;
+  --navbar-color: #151414;
+  --button-blue: #2177da;
+  --hover-green: #49e6b2;
+  --text-green: aquamarine;
+  --text-h1: whitesmoke;
+  --text-title-color: #1ebde4;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background-color);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Navbar styles */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--navbar-color);
+}
+
+.navbar-left {
+  flex: 1;
+  color: #f2eded;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto' sans-serif;
+  color: #f2eded;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,1px 2px 0px #957dad,1px 3px 0px #957dad,1px 4px 0px #957dad,1px 5px 0px #957dad,1px 6px 0px #957dad, 1px 10px 5px rgba(16,16,16,0.5), 1px 15px 10px rgba(16,16,16,0.4),1px 20px 30px rgba(16,16,16,0.3),
+  1px 25px 50px rgba(16,16,16,0.2), ;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3,0px 0px 20px #b393d3;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+
+
+
+
+
+.nav-link {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #49e6b2;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Main screen styles */
+.main-screen {
+  /* background-color: #1d1d1d; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1;
+  color: var(--text-h1);
+  padding: 20px;
+  text-align: left;
+}
+
+.title {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 80px;
+  background: rgb(210, 91, 228);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* media query for mobile view for home screen */
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}
+/* media query for mobile view for home screen end */
+
+.analyze,
+.build {
+  color: var(--text-title-color);
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3,0px 0px 20px #b393d3;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Build Button in 1st page*/
+.build-button {
+  background-color: #2177da;
+  color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  margin-left: 50px;
+  margin-top: 20px;
+  transition: color 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+.build-button:hover {
+  background-color: #49e6b2;
+  color: black;
+  transform: scale(1.06);
+}
+
+/*Button done */
+
+/*1st screen image */
+.image-container {
+  animation: imageAnimation 1s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+  background-color: var(--navbar-color);
+  text-align: center;
+  width: 100%;
+  color: white; /* Set text color */
+}
+.footer-content {
+  font-size: 18px; /* Adjust the font size as needed */
+}

@@ -1,0 +1,247 @@
+<body>
+    <div class="left-side">
+      <!-- form -->
+      <div id="cv-form">
+        <div class="header text-center bg-dark text-light">
+          <h2>Resume Form</h2>
+          <h4>Your professional story starts with us!</h4>
+        </div>
+  
+        <div class="container mt-3 container-form">
+          <!-- Form content goes here -->
+          <div class="row">
+            <!-- colume 1 -->
+            <div class="col-md-6 mt-2">
+              <h3>Personal Details</h3>
+              <div class="from-group mt-4">
+                <label for="imgField">Select your photo *</label>
+                <input id="imgField" type="file" class="form-control" onchange="updateProfilePicture(this)" />
+              </div>
+              <div class="form-group mt-3">
+                <label for="namefield"> Your Name</label>
+                <input type="text" id="namefield" class="form-control" placeholder="Enter your name" />
+              </div>
+              <div class="form-group mt-4">
+                <label for="desired-role"> Desired Role </label>
+                <input type="text" id="desired-role" class="form-control" placeholder="Enter your Desired role">
+              </div>
+              <div class="form-group mt-2">
+                <label for="contactfield"> Your Contact No.</label>
+                <input type="number" id="contactfield" class="form-control" placeholder="Enter your Contact name" />
+              </div>
+              <div class="form-group mt-3">
+                <label for="emailfield"> Your Email Id</label>
+                <input type="email" id="emailfield" class="form-control" placeholder="Enter your email id " />
+              </div>
+              <div class="form-group mt-3">
+                <label for="agefeild">Age:</label>
+                <input type="number" class="form-control" id="agefeild" name="age" placeholder="Enter Age" min="1"
+                  max="100">
+              </div>
+              <div class="form-group mt-3">
+                <label for="address_details">Address: </label>
+                <input type="text" id="address_details" class="form-control" placeholder="Enter your address" />
+              </div>
+  
+              <h3>Social Link</h3>
+  
+              <div class="form-group mt-2">
+                <label for="githubfield">Github Link</label>
+                <input type="text" id="githubfield" class="form-control" placeholder="Enter your Github Profile link" />
+              </div>
+              <div class="form-group mt-3">
+                <label for="linkedinfield"> LinkedIn Link</label>
+                <input type="text" id="linkedinfield" class="form-control"
+                  placeholder="Enter your Linkedin Profile link" />
+              </div>
+              <div class="form-group mt-3">
+                <label for="websitefield"> Personal Website Link</label>
+                <input type="text" id="websitefield" class="form-control" placeholder="Enter your Website link" />
+              </div>
+  
+  
+            </div>
+  
+            <!-- column 2 -->
+            <div class="col-md-6 mt-2">
+              <h3>Professional Experience</h3>
+              <div class="form-group mt-2">
+                <label for="skills">Technical Skills:</label>
+                <div class="skill">
+                  <label for="languages">Programming Lanuages:</label>
+                  <input type="text" class="form-control" placeholder="ex:python,java,c,..." id="languages"></input>
+                  <label for="tools">Devlopment Tools:</label>
+                  <input type="text" class="form-control" placeholder="ex:MySQL,Springboot,bootstrap..."
+                    id="tools"></input>
+                  <label for="software">Softwares:</label>
+                  <input type="text" class="form-control" placeholder="ex:Microsoft visual studio code,Github..."
+                    id="software"></input>
+                </div>
+              </div>
+  
+              <div class="form-group mt-3" id="we">
+                <label for="workexpi">Work Experience</label>
+                <div id="workExperienceContainer">
+                  <div class="workExperience">
+                    <input type="text" class="form-control roleInput" placeholder="Role" id="workrole">
+                    <input type="text" class="form-control companyInput" placeholder="company name" id="compname">
+                    <input type="text" class="form-control durationInput" placeholder="Duration" id="wd">
+                    <textarea class="form-control descriptionInput" placeholder="Description" id="workdescp"></textarea>
+                  </div>
+                  <button class="deleteButton" onclick="clearworkExperience(this)">delete</button>
+                  <div style="clear: both;"></div>
+                </div>
+  
+                <!-- add new textarea by js -->
+                <div class="container text-center mt-2" id="addExperienceButton">
+                  <button onclick="addNewExp()" class="btn btn-warning btn-sm">
+                    Add another experience
+                  </button>
+                </div>
+              </div>
+              <div class="form-group mt-2" id="Ee">
+                <label for="eduexpi">Education:</label>
+                <div id="eduExperienceContainer">
+                  <div class="eduExperience">
+                    <input type="text" class="form-control clgInput" placeholder="Scool/College" id="clg">
+                    <input type="text" class="form-control degInput" placeholder="Degree/Course" id="course">
+                    <input type="text" class="form-control startYearInput" placeholder="Start Year" id="startYear">
+                    <input type="text" class="form-control endYearInput" placeholder="End Year" id="endYear">
+                  </div>
+                  <button class="deleteButtons" onclick="clearEduExperience(this)">delete</button>
+                  <div style="clear: both;"></div>
+                </div>
+  
+                <!-- add new textarea by js -->
+                <div class="container text-center mt-2" id="addEducationButton">
+                  <button onclick="addNewEdu()" class="btn btn-warning btn-sm">
+                    Add Another Education
+                  </button>
+                </div>
+              </div>
+              <div class="form-group mt-3" id="Pe">
+                <label for="projdetails">Project Details:</label>
+                <div id="projectDetailsContainer">
+                  <div class="projDetails">
+                    <input type="text" class="form-control titleInput" placeholder="Project Title" id="title">
+                    <textarea class="form-control projdescriptionInput" placeholder="Description"
+                      id="projdescp"></textarea>
+                  </div>
+                  <button class="deleteButtonP" onclick="clearProjDetails(this)">delete</button>
+                  <div style="clear: both;"></div>
+                </div>
+                <div class="container text-center mt-2" id="addprojectButton">
+                  <button onclick="addNewProj()" class="btn btn-warning btn-sm">
+                    Add Another Project
+                  </button>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="container text-center my-4">
+              <button id="generateButton" class="btn btn-warning btn-large">
+                Generate Resume
+              </button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- =============================================================== -->
+      <div id="resume-template" class="resume">
+        <!-- Template content goes here -->
+        <div class="personal-information">
+            <!-- <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture"> -->
+            <div class="profile-picture-container">
+              <img id="profilePicture" src="profile.img" alt="Profile Picture" class="profile-picture">
+            </div>
+            <h1 id="nameT">Name</h1>
+            <p id="roleT">Desired Role</p>
+            <p id="ageT"><strong>Age:</strong> 21</p>
+            <p id="numberT"><strong>Contact No. :</strong> Your Contact Number</p>
+            <p id="EmailT"><strong>Email Id:</strong> your.email@example.com</p>
+            <!-- <p><strong>Address:</strong> Your Address</p> -->
+            <div class="social-links">
+              <strong>Social Links:</strong> <br>
+              <a id="githubT" href="https://github.com/" class="github-link">Github</a>
+              <a id="linkedinT" href="https://linkedin.com/" class="linkedin-link">LinkedIn</a>
+              <a id="portfolioT" href="https://portfolio.com/" class="portfolio-link">Portfolio</a>
+            </div>
+          </div>
+          <div class="professional-information">
+            <div class="skills">
+              <h2>Skills</h2>
+              <!-- <ul>
+                    <li>Programming Lanuages: </li> 
+                    <li>: </li> <p>Springboot,Flask,Django</p>
+                    <li>Softwares: </li> <p>MS visual studio code,MySQL Workbench</p>
+                </ul> -->
+              <p id="langT"><strong>Programming Lanuages: </strong>Java,python,c,c++</p>
+              <p id="toolsT"><strong>Devlopment Tools: </strong>Springboot,Flask,Django</p>
+              <p id="softwareT"><strong>Softwares: </strong>MS visual studio code,MySQL Workbench</p>
+            </div>
+            <div class="work-experience">
+              <h2>Work Experience</h2>
+              <div class="experience">
+                <ul id="weT">
+                  <li>
+                    <p><strong id="ExRoleT">Your Role</strong></p>
+                  </li>
+                  <li>
+                    <p id="wdT"> Work Duration</p>
+                  </li>
+                  <li>
+                    <p id="weC">Company Name</p>
+                  </li>
+                  <li>
+                    <p id="workdescpT"> Work Description</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Add more experience sections as needed -->
+            </div>
+            <div class="education">
+              <h2>Education</h2>
+              <div class="edu-experience">
+                <ul id="edueT">
+                  <li>
+                    <p><strong id="clgT">Your School/College</strong></p>
+                  </li>
+                  <li>
+                    <p id="courseT">Degree/course Name</p>
+                  </li>
+                  <li>
+                    <p id="eduT">Start Year</p>
+                    <p id="eduT2"> End Year</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Add more education sections as needed -->
+            </div>
+            <div class="projects">
+              <h2>Projects</h2>
+              <div class="project">
+                <ul id="prodet">
+                  <li>
+                    <p><strong id="titleT">Your Project Title</strong></p>
+                  </li>
+                  <li>
+                    <p id="projdescpT">Project Description</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Add more project sections as needed -->
+            </div>
+          </div>
+      </div>
+    </div>
+  
+    <!-- Include your scripts here -->
+    <script src="/scripts/build.js"></script>
+    <script>
+        document.getElementById("generateButton").addEventListener("click", generateResumeButton);
+    </script>
+  </body>
+  

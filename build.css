@@ -1,0 +1,509 @@
+/* Resume form styling  */
+
+.container-form {
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #1d1d1d;
+    color:white;
+}
+  
+#cv-form  {
+    background-color: rgb(55, 55, 53);
+    
+}
+
+
+#cv-form h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 60px;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom left,#553c9a,#ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+#cv-form h4{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background-image: radial-gradient(circle,#553c9a,#ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+ 
+  
+  /* #cv-template {
+    display: none;
+  } */
+  
+.container-form .myimg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+.container-form .background {
+    background-color: rgb(248, 253, 207);
+  }
+  
+.container-form .left-template {
+    background-color: rgb(108, 141, 249);
+    color: white;
+  }
+  
+.container-form h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: conic-gradient(#553c9a,#ee4b2b,#00c2cb);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+.container-form a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* h1 .nameT {
+    text-transform: capitalize;
+  } */
+ .personal-information #nameT {
+    font-size: 20px; /* Adjust the size as needed */
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+.container-form .card-header {
+    color: rgb(61, 61, 61);
+    padding: 6px !important;
+  }
+  
+.container-form .workExperience {
+    padding: 20px;
+  }
+  
+.container-form .workExperience input,
+.container-form .workExperience textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+.workExperienceContainer {
+    background-color: #cc9c6c;
+  }
+  
+.container-form #workExperienceContainer {
+    position: relative;
+  }
+
+.container-form .projDetails {
+    padding: 20px;
+  }
+.container-form #projectDetailsContainer {
+    position: relative;
+  }
+.container-form .projectDetailsContainer{
+    background-color:#cc9c6c;
+  }
+.container-form .projDetails input,
+.container-form .projDetails textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.container-form .eduExperience {
+    padding: 20px;
+  }
+.container-form #eduExperienceContainer{
+    position:relative;
+  }
+.eduExperienceContainer {
+    background-color: #cc9c6c;
+  }
+.container-form .eduExperience input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.container-form .skill {
+    padding: 20px;
+  }
+.container-form .skill input{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+.container-form .deleteButton {
+    position: relative;
+    margin-top: 5px;
+    right: 0;
+    margin-right: -15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: red;
+    padding: 3px 10px;
+  }
+.container-form .deleteButtons {
+    position:relative;
+    top: -5px;
+    right: 0;
+    /* margin-top: 4px; */
+    margin-right: -15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: red;
+    padding: 3px 10px;
+
+  }
+.container-form .deleteButtonP {
+    position:relative;
+    top: -5px;
+    right: 0;
+    /* margin-top: 4px; */
+    margin-right: -15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: red;
+    padding: 3px 10px;
+  }
+.container-form .deleteButtonh{
+  position:relative;
+  margin-top: 10px;
+  right: 0;
+  /* margin-top: 4px; */
+  margin-right: -15px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: red;
+  padding: 3px 10px;
+}
+.container-form .eduExperience input,
+.container-form .eduExperience textarea {
+    margin-bottom: 10px; 
+  }
+
+.container-form .projDetails input,
+.container-form .projDetails textarea {
+    margin-bottom: 10px; 
+  }
+
+
+  @-webkit-keyframes rotate360 {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate360 {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes exist {
+    100% {
+      width: 15px;
+      height: 15px;
+      margin: -8px 5px 0 0;
+    }
+  }
+  @keyframes exist {
+    100% {
+      width: 15px;
+      height: 15px;
+      margin: -8px 5px 0 0;
+    }
+  }
+/* Resume Form Styling Ends Here */
+
+
+/* Resume Template Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #ecf0f1;
+}
+
+.resume {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 50px auto;
+  background-color: #2c3e50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styles for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+  #resume-template {
+      width: 120%; /* Adjust width as needed */
+      margin: 0 auto; /* Center the template */
+      display:flex;
+  }
+
+  .profile-picture-container {
+      text-align: center;
+  }
+
+  .profile-picture {
+      width: 100%; /* Make the profile picture fill the container */
+  }
+
+  .personal-information,
+  .professional-information {
+      width: 100%; /* Make each section take full width on smaller screens */
+      box-sizing: border-box; /* Include padding and border in the width calculation */
+      padding: 10px; /* Adjust padding for better spacing on smaller screens */
+  }
+
+  .professional-information {
+      margin-top: 10px; /* Add margin to separate personal and professional information */
+  }
+
+  /* Hide the images on the left and right */
+  #image-container {
+      display: none;
+  }
+  #removeFooterCheckboxContainer {
+    text-align:center; /* Center align the text 
+  }
+  
+  #removeFooterCheckbox {
+    display: inline-block; /* Make it inline-block to center both horizontally */
+    vertical-align: middle; /* Align vertically to the middle */
+    margin-left: 270px;
+  } 
+  
+  .download {
+    margin-left: 300px;
+  }
+  .image-container{
+    display: none;
+  }
+}
+
+.personal-information {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  width: 35%;
+  padding: 20px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ecf0f1;
+  object-fit: cover;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #3498db; /* Changed link color */
+}
+
+.professional-information {
+  width: 800px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  box-sizing: border-box;
+}
+/* #weT li {
+  list-style-type: none;
+} */
+#weT {
+  padding: 0;
+}
+#clgT li{
+  list-style-type:armenian;
+}
+
+#weT li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ExRoleT, #wdT, #workdescpT {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#edueT {
+  padding: 0;
+}
+#edueT li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#clgT, #courseT, #eduT {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#prodet {
+  padding: 0;
+}
+#prodet li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#titleT, #projdescpT {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+ .skills ul li {
+  margin-bottom: 15px;
+  list-style-type:square;
+} 
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+h1, h3, p {
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add a medium gap between the form and template */
+#resume-template {
+  margin-top: 40px;
+  /* display: none;  */
+}
+#nameT {
+  margin-top: 10px;
+}
+#roleT {
+  margin-top: 10px;
+}
+#ageT {
+  margin-top: 10px;
+}
+#numberT {
+  margin-top: 10px;
+}
+#EmailT{
+  margin-top: 10px;
+}
+.social-links {
+  margin-top: 10px;
+}
+.hobby {
+  margin-top: 10px;
+}
+.hobby ul {
+  list-style-type: disc; /* Use 'disc' for filled bullets */
+  
+}
+
+.hobby li {
+  margin-bottom: 5px; /* Adjust spacing between items */
+  
+}
+.work-experience {
+  margin-top: 10px;
+}
+
+ #removeFooterCheckboxContainer {
+  text-align:center; /* Center align the text 
+}
+
+#removeFooterCheckbox {
+  display: inline-block; /* Make it inline-block to center both horizontally */
+  vertical-align: middle; /* Align vertically to the middle */
+} 
+
+.download {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.download:hover {
+  background-color: #219653;
+}
+
+/* Responsive Styling */
+
+#resume-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Adjust as needed */
+}
+
+.image-container {
+  text-align: center;
+  animation: imageAnimation 1s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.resume-image {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.image-quote {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align:center;
+  background-image: conic-gradient(#553c9a 30%,#ee4b2b 40%,#ee4b2b 70%,#00c2cb 80%,#553c9a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+/* Resume Template Styling ends here */
+
+
+ 
